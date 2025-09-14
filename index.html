@@ -57,13 +57,8 @@
         <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b border-[#e7edf4] bg-white px-4 sm:px-10 py-3 shadow-sm">
           <!-- Логотип -->
           <div class="flex items-center gap-3 text-[#0d141c]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+            <div class="w-6 h-6">
+              <img src="images/favicons/android-chrome-192x192.png" alt="Connectify Logo" class="w-full h-full object-contain">
             </div>
             <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Connectify Media</h2>
           </div>
@@ -150,12 +145,13 @@
               <h2 class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72 scroll-mt-12" id="team">Team</h2>
             </div>
 
-            <!--Filter buttons-->
-            <div class="flex flex-wrap justify-center gap-3 py-4">
-              <button onclick="filterFreelancers('all')" class="filter-btn bg-[#2c7c62] text-white px-4 py-1 rounded-full">All</button>
-              <button onclick="filterFreelancers('business')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">BizDevs</button>
-              <button onclick="filterFreelancers('analysis')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Analytics</button>
-            </div>
+            <!--
+              <div class="flex flex-wrap justify-center gap-3 py-4">
+                <button onclick="filterFreelancers('all')" class="filter-btn bg-[#2c7c62] text-white px-4 py-1 rounded-full">All</button>
+                <button onclick="filterFreelancers('business')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">BizDevs</button>
+                <button onclick="filterFreelancers('analysis')" class="filter-btn bg-[#e7edf4] text-[#0d141c] px-4 py-1 rounded-full">Analytics</button>
+              </div>
+            -->
 
             <div id="freelancer-list" class="flex flex-col gap-4 sm:gap-4">
 
@@ -283,7 +279,7 @@
 
             </div>
 
-            <div id="pagination" class="flex justify-center gap-4 my-4"></div>
+            <!--<div id="pagination" class="flex justify-center gap-4 my-4"></div>-->
 
             <!--contacto-->
             <div class="flex flex-wrap justify-between gap-3 p-4">
@@ -348,7 +344,10 @@
 
               </div>
 
-              <div class="swiper-pagination"></div>
+              <div class="mt-6">
+                <div class="swiper-pagination"></div>
+              </div>
+              
             </div>
 
             <!--geografia-->
