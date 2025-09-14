@@ -77,6 +77,7 @@
             <a class="block px-4 py-3 text-sm text-[#0d141c] font-medium sm:px-0 sm:py-0" href="#team">Team</a>
             <a class="block px-4 py-3 text-sm text-[#0d141c] font-medium sm:px-0 sm:py-0" href="#contact">Contact</a>
             <a class="block px-4 py-3 text-sm text-[#0d141c] font-medium sm:px-0 sm:py-0" href="#geografia">Geografia</a>
+            <a class="block px-4 py-3 text-sm text-[#0d141c] font-medium sm:px-0 sm:py-0" href="#faq">FAQs</a>
           </nav>
         </header>
 
@@ -394,6 +395,124 @@
               </div>
             </div>
 
+            <!-- FAQ -->
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <h2 class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72 scroll-mt-12" id="faq">FAQs</h2>
+            </div>
+
+            <div class="space-y-4 px-4 w-full">
+            <!-- Вопрос 1 -->
+            <div class="border border-[#d0dee7] rounded-lg bg-white shadow-sm">
+              <button onclick="toggleFaq(1)" class="w-full flex justify-between items-center p-4 text-left">
+                <span class="text-[#0d141c] font-medium">Why do I need this database?</span>
+                <svg id="faq-icon-1" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#2c7c62] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="faq-answer-1" class="hidden px-4 pb-4 text-sm text-gray-600">
+                Our database is a huge tool which has an aim to help affiliate managers, media buyers, marketing specialists not to gather information 
+                about potential campaigns, but fully rely on our data and save their costly time and efforts, focusing only on decision making.
+              </div>
+            </div>
+            <!-- Вопрос 2 -->
+            <div class="border border-[#d0dee7] rounded-lg bg-white shadow-sm">
+              <button onclick="toggleFaq(2)" class="w-full flex justify-between items-center p-4 text-left">
+                <span class="text-[#0d141c] font-medium">Can you show your previous work statistics?</span>
+                <svg id="faq-icon-2" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#2c7c62] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="faq-answer-2" class="hidden px-4 pb-4 text-sm text-gray-600">
+                Unfortunately, no. Our team collects huge amounts of databases and our goal is to give brands a tool for decision making. Only 
+                brands on their own run marketing campaigns. We only help them to make a final decision to work with a streamer or not based on statistics.
+              </div>
+            </div>
+            <!-- Вопрос 3 -->
+            <div class="border border-[#d0dee7] rounded-lg bg-white shadow-sm">
+              <button onclick="toggleFaq(3)" class="w-full flex justify-between items-center p-4 text-left">
+                <span class="text-[#0d141c] font-medium">How much does the access cost?</span>
+                <svg id="faq-icon-3" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#2c7c62] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="faq-answer-3" class="hidden px-4 pb-4 text-sm text-gray-600">
+                Our price is $200 per month for daily updated database.
+              </div>
+            </div>
+            <!-- Вопрос 4 -->
+            <div class="border border-[#d0dee7] rounded-lg bg-white shadow-sm">
+              <button onclick="toggleFaq(4)" class="w-full flex justify-between items-center p-4 text-left">
+                <span class="text-[#0d141c] font-medium">How do you provide access and how to get it?</span>
+                <svg id="faq-icon-4" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#2c7c62] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="faq-answer-4" class="hidden px-4 pb-4 text-sm text-gray-600">
+                The only thing we need to provide access is your or your team email. We will share the access only to emails you provided.
+              </div>
+            </div>
+            <!-- Вопрос 5 -->
+            <div class="border border-[#d0dee7] rounded-lg bg-white shadow-sm">
+              <button onclick="toggleFaq(5)" class="w-full flex justify-between items-center p-4 text-left">
+                <span class="text-[#0d141c] font-medium">How often the database is being updated?</span>
+                <svg id="faq-icon-5" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#2c7c62] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="faq-answer-5" class="hidden px-4 pb-4 text-sm text-gray-600">
+                The database is updated daily (UTC-0).
+              </div>
+            </div>
+            <!-- Вопрос 6 -->
+            <div class="border border-[#d0dee7] rounded-lg bg-white shadow-sm">
+              <button onclick="toggleFaq(6)" class="w-full flex justify-between items-center p-4 text-left">
+                <span class="text-[#0d141c] font-medium">Do you have only a database for LATAM KICK streamers?</span>
+                <svg id="faq-icon-6" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#2c7c62] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="faq-answer-6" class="hidden px-4 pb-4 text-sm text-gray-600">
+                Yes, currently we are working with LATAM geos so our partners could run fully marketing SA campaigns.
+              </div>
+            </div>
+            <!-- Вопрос 7 -->
+            <div class="border border-[#d0dee7] rounded-lg bg-white shadow-sm">
+              <button onclick="toggleFaq(7)" class="w-full flex justify-between items-center p-4 text-left">
+                <span class="text-[#0d141c] font-medium">Will I be the only database owner?</span>
+                <svg id="faq-icon-7" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#2c7c62] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="faq-answer-7" class="hidden px-4 pb-4 text-sm text-gray-600">
+                Yes, the main database will be available only for you, but a demo version is available for everyone.
+              </div>
+            </div>
+            <!-- Вопрос 8 -->
+            <div class="border border-[#d0dee7] rounded-lg bg-white shadow-sm">
+              <button onclick="toggleFaq(8)" class="w-full flex justify-between items-center p-4 text-left">
+                <span class="text-[#0d141c] font-medium">Can I take a look at the demo of the database?</span>
+                <svg id="faq-icon-8" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#2c7c62] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="faq-answer-8" class="hidden px-4 pb-4 text-sm text-gray-600">
+                Sure, demo is available via <a href="https://docs.google.com/spreadsheets/d/1o3lnfRrwmi_mNY0VCRIcKE6bbuosTmtBvfTDW_Hvw7A/edit?usp=sharing" class="link-green">link</a>.
+              </div>
+            </div>
+            <!-- Вопрос 9 -->
+            <div class="border border-[#d0dee7] rounded-lg bg-white shadow-sm">
+              <button onclick="toggleFaq(9)" class="w-full flex justify-between items-center p-4 text-left">
+                <span class="text-[#0d141c] font-medium">How can I pay for the access?</span>
+                <svg id="faq-icon-9" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#2c7c62] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="faq-answer-9" class="hidden px-4 pb-4 text-sm text-gray-600">
+                For your convenience, we accept crypto. All the details can be informed by the manager.
+              </div>
+            </div>
+        </div>
+
           </div>
         </div>
 
@@ -477,6 +596,26 @@
     <!--Define current year-->
     <script>
       document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+    <!--FAQs-->
+    <script>
+      function toggleFaq(id) {
+        const answer = document.getElementById(`faq-answer-${id}`);
+        const icon = document.getElementById(`faq-icon-${id}`);
+
+        const isOpen = !answer.classList.contains('hidden');
+
+        // Закрываем все
+        document.querySelectorAll('[id^="faq-answer-"]').forEach(el => el.classList.add('hidden'));
+        document.querySelectorAll('[id^="faq-icon-"]').forEach(el => el.classList.remove('rotate-180'));
+
+        // Если был закрыт, открываем
+        if (!isOpen) {
+          answer.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      }
     </script>
 
     <!-- Swiper JS -->
