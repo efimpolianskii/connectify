@@ -46,6 +46,11 @@
       .link-green:hover {
         color: #215c4a;
       }
+
+      @keyframes scrollX {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
     </style>
     <title>Connectify Media - Latin American Kick Streamer Database for iGaming</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -123,22 +128,72 @@
             <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
               We have already worked with the following brands:
             </p>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center">
-                <img src="https://media.licdn.com/dms/image/v2/C4D0BAQHiW-uBv4u7ng/company-logo_200_200/company-logo_200_200/0/1675941567522/megapari_logo?e=2147483647&v=beta&t=WpELXu4A3aUP07WqptJTh4XE05y9BxBksuo24V0wVho" alt="Megapari logo" class="w-8 h-8 object-contain">
-                <p class="text-[#0e161b] text-base font-bold leading-tight">Megapari</p>
-              </div>
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center">
-                <img src="https://abuking.com/cfr/fb29d6d7089a465/p/26-08-2025-09-54-09-5e80456a/assets/images/project-icon-512.png" alt="Abuking logo" class="w-8 h-8 object-contain">
-                <p class="text-[#0e161b] text-base font-bold leading-tight">Abuking</p>
-              </div>
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center">
-                <img src="https://www.crystalmediaco.com/wp-content/uploads/2023/06/CM-Logo-Updates-on-Black-2023-01.jpg" alt="Abuking logo" class="w-8 h-8 object-contain">
-                <p class="text-[#0e161b] text-base font-bold leading-tight">Crystal Media</p>
-              </div>
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center">
-                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQE1lHrEQsPLww/company-logo_200_200/company-logo_200_200/0/1731663891990/rainbet_logo?e=2147483647&v=beta&t=GTcOMaa4lSKRtocMAYb6vRrAdu7IGjp0H7GobSJRhDY" alt="Abuking logo" class="w-8 h-8 object-contain">
-                <p class="text-[#0e161b] text-base font-bold leading-tight">Rainbet</p>
+
+            <div class="overflow-hidden w-full">
+              <div class="flex gap-3 animate-scroll" 
+                  style="animation: scrollX 40s linear infinite; width: max-content;">
+
+                <!-- Первый набор -->
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://media.licdn.com/dms/image/v2/C4D0BAQHiW-uBv4u7ng/company-logo_200_200/company-logo_200_200/0/1675941567522/megapari_logo?e=2147483647&v=beta&t=WpELXu4A3aUP07WqptJTh4XE05y9BxBksuo24V0wVho" alt="Megapari logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Megapari</p>
+                </div>
+
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://abuking.com/cfr/fb29d6d7089a465/p/26-08-2025-09-54-09-5e80456a/assets/images/project-icon-512.png" alt="Abuking logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Abuking</p>
+                </div>
+
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://www.crystalmediaco.com/wp-content/uploads/2023/06/CM-Logo-Updates-on-Black-2023-01.jpg" alt="Crystal logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Crystal Media</p>
+                </div>
+
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://media.licdn.com/dms/image/v2/D4E0BAQE1lHrEQsPLww/company-logo_200_200/company-logo_200_200/0/1731663891990/rainbet_logo?e=2147483647&v=beta&t=GTcOMaa4lSKRtocMAYb6vRrAdu7IGjp0H7GobSJRhDY" alt="Rainbet logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Rainbet</p>
+                </div>
+
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqbHUp_V17Y3OaXbALWAn4ecuHA3l3S4V87Q&s" alt="Betbox logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Betbox</p>
+                </div>
+
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://bono.ec/wp-content/uploads/2023/05/Ecuabet-Resena.jpg" alt="Ecuabet logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Ecuabet</p>
+                </div>
+
+                <!-- Второй набор (копия) -->
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://media.licdn.com/dms/image/v2/C4D0BAQHiW-uBv4u7ng/company-logo_200_200/company-logo_200_200/0/1675941567522/megapari_logo?e=2147483647&v=beta&t=WpELXu4A3aUP07WqptJTh4XE05y9BxBksuo24V0wVho" alt="Megapari logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Megapari</p>
+                </div>
+
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://abuking.com/cfr/fb29d6d7089a465/p/26-08-2025-09-54-09-5e80456a/assets/images/project-icon-512.png" alt="Abuking logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Abuking</p>
+                </div>
+
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://www.crystalmediaco.com/wp-content/uploads/2023/06/CM-Logo-Updates-on-Black-2023-01.jpg" alt="Crystal logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Crystal Media</p>
+                </div>
+
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://media.licdn.com/dms/image/v2/D4E0BAQE1lHrEQsPLww/company-logo_200_200/company-logo_200_200/0/1731663891990/rainbet_logo?e=2147483647&v=beta&t=GTcOMaa4lSKRtocMAYb6vRrAdu7IGjp0H7GobSJRhDY" alt="Rainbet logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Rainbet</p>
+                </div>
+
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqbHUp_V17Y3OaXbALWAn4ecuHA3l3S4V87Q&s" alt="Betbox logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Betbox</p>
+                </div>
+
+                <div class="flex gap-3 rounded-lg border border-[#d0dee7] bg-slate-50 p-4 items-center w-[160px] flex-shrink-0">
+                  <img src="https://bono.ec/wp-content/uploads/2023/05/Ecuabet-Resena.jpg" alt="Ecuabet logo" class="w-8 h-8 object-contain">
+                  <p class="text-[#0e161b] text-base font-bold leading-tight">Ecuabet</p>
+                </div>
               </div>
             </div>
 
@@ -767,6 +822,24 @@
           menu.classList.add("hidden");
         }
       });
+    </script>
+
+    <script>
+      const carousel = document.getElementById("carousel");
+
+      let scrollAmount = 0;
+      const step = 1; // скорость (px за тик)
+      const delay = 30; // задержка (мс)
+
+      function autoScroll() {
+        if (carousel.scrollWidth - carousel.clientWidth === carousel.scrollLeft) {
+          carousel.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          carousel.scrollLeft += step;
+        }
+      }
+
+      setInterval(autoScroll, delay);
     </script>
 
   </body>
